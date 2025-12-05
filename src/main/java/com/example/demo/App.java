@@ -37,9 +37,4 @@ public class App {
             return "Error: " + e.getMessage();
         }
     }
-
-    @GetMapping("/health")
-    public String health() {
-        return "OK";
-    }
 }
