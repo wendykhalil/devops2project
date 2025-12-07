@@ -53,6 +53,27 @@
                     </execution>
                 </executions>
             </plugin>
+            
         </plugins>
-    </build>
+    </build><build>
+    <plugins>
+
+        <!-- يضيف Main-Class في ملف manifest -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.3.0</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <mainClass>com.example.demo.MainApp</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+
+    </plugins>
+</build>
+
 </project>
