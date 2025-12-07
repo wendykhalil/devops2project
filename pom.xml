@@ -43,6 +43,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <mainClass>com.example.demo.App</mainClass> <!-- Remplace par ta classe main réelle -->
+                </configuration>
             </plugin>
 
             <!-- Compiler plugin -->
